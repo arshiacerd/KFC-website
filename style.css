@@ -1,0 +1,708 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  /* max-width: 100%; */
+}
+body {
+  font-family: "Poppins", sans-serif;
+
+  font-size: 2rem;
+}
+.homePage {
+  background: radial-gradient(#f0483a, #d10a20);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background: url("./Assets/bg.jfif"); */
+
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; */
+}
+.width-container {
+  max-width: 1170px;
+  margin: auto;
+}
+.homePage-body {
+  position: relative;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 50%;
+  padding: 0px 30px;
+}
+.homePage-body h3 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #ffffff;
+}
+.homePage-body p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: transparent;
+  border-radius: 30px;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--main-color);
+  line-height: 1.5;
+  user-select: none;
+  border: 2px solid #fff;
+  width: 26%;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+.main-section {
+  display: flex;
+  /* gap: 90px; */
+}
+.navbar {
+  display: flex;
+
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  color: #ffffff;
+  /* background-color: darkkhaki; */
+}
+
+.logo img {
+  width: 150px;
+  vertical-align: middle;
+}
+.navbar-child ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+ul li {
+  padding-right: 30px;
+}
+.navbar-child {
+  width: 90%;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-child ul li {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.navbar-child ul li i {
+  color: #d10a20;
+
+  background-color: #ffffff;
+  font-size: 17px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.main-section img {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+.menus {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: relative;
+  background-color: #fff;
+}
+.menus button {
+  position: absolute;
+  top: -19px;
+
+  width: 120px;
+  background-color: #ffb71a;
+  color: #fff8e8;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 23px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+.menu-items {
+  margin: 26px 0px;
+
+  background-color: #ffffff;
+}
+.menu-items ul li img {
+  width: 100px;
+  height: 100px;
+}
+.menu-items ul li .item-title {
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.menu-items ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.menu-items ul li i {
+  color: #f02328;
+}
+.border-item {
+  border-bottom: 5px solid #fb0000;
+}
+.burger-card {
+  background-color: #ffffff;
+}
+.cards-price h3 {
+  color: #f0282d;
+}
+.cards-bg {
+  background-image: url("./Assets/menuBG.jfif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 80px 0px;
+}
+.cards-container {
+  margin-top: 26px;
+}
+.cards-first-child,
+.cards-second-child {
+  display: flex;
+  justify-content: center;
+}
+.cards-first-child .cards,
+.cards-second-child .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: calc(1170px / 3);
+  position: relative;
+  margin: 0 10px 30px;
+
+  padding: 30px;
+  border-radius: 8px;
+  text-align: initial;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+}
+.cards-first-child .cards .red {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+.white-bg {
+  background-image: url("./Assets/white3.jpg");
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.cards img {
+  width: 150px;
+  height: 150px;
+  background-color: transparent;
+
+  border-radius: 50%;
+}
+.cards-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cards-second-child .cards {
+  width: calc(1170px / 2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cards-second-child .cards button {
+  padding: 12px 10px;
+  text-transform: uppercase;
+  background-color: #f1252b;
+  color: #fff8f8;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.cards-title {
+  font-size: 1.5rem;
+}
+.cards-description {
+  font-size: 1rem;
+}
+.cards-price {
+  font-size: 1.2rem;
+}
+.bricks-bg {
+  position: relative;
+  background-image: url("./Assets/bricks3.jpg");
+}
+.red {
+  position: absolute;
+  background-color: #c02222;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.9;
+}
+.kfc-app {
+  background-color: #ffb133;
+  /* background-image: url("./Assets/marigold-color-solid-color-background.jpg"); */
+}
+.kfc-app-child {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+.voucher {
+  margin: -50px 0px;
+}
+.voucher-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.voucher-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  gap: 20px;
+}
+.voucher-head {
+  color: #fffdfa;
+  text-transform: capitalize;
+  line-height: 1.2;
+}
+
+.download-btn {
+  display: flex;
+  flex-direction: row;
+  width: 14em;
+  height: 4em;
+  justify-content: center;
+  padding: 10px 0px;
+  align-items: center;
+  gap: 9px;
+  background: #000;
+
+  border-radius: 4px;
+
+  color: #fff;
+  cursor: pointer;
+  border-radius: 43px;
+}
+.fa-google-play {
+  font-size: 2.1em;
+}
+.fa-apple,
+.fa-google-play {
+  font-size: 2.4rem;
+  color: #fff;
+}
+.btn-para {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.thin-text {
+  font-size: 12px;
+}
+.brand-text {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.voucher-btn button span {
+  display: block;
+}
+.feedback-main {
+  background-image: url("./Assets/menuBG.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.feedback-child {
+  padding: 130px 0px;
+  display: flex;
+  gap: 73px;
+  align-items: center;
+}
+.comments {
+  width: 50%;
+  display: flex;
+  padding: 0px 20px;
+  flex-direction: column;
+  gap: 25px;
+}
+.feedback-para img {
+  width: 150px;
+}
+video {
+  /* width: calc(70%-25px); */
+  height: 200px;
+  border: 10px solid white;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.blur-div {
+  position: relative;
+}
+.blur {
+  position: absolute;
+  background: rgb(70 67 67 / 80%);
+  width: 100%;
+  bottom: 14px;
+  height: 8vh;
+}
+.blur p {
+  color: #fff;
+  text-align: start;
+  padding: 10px;
+}
+.blur p a {
+  color: #eaa023;
+}
+.cards-feedback {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.comments-first .cards-feedback {
+  width: calc(70% / 2);
+  /* border: 2px solid black; */
+  padding: 10px 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  position: relative;
+}
+
+.cards-feedback i {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.cards-feedback .fa-instagram {
+  background-color: #fd1d1d;
+  padding: 9px;
+}
+.cards-feedback .fa-twitter {
+  background-color: #00acee;
+  padding: 7px;
+}
+.cards-feedback .fa-facebook-f {
+  background-color: #4267b2;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+.comments-first,
+.comments-second {
+  display: flex;
+  gap: 25px;
+}
+.comments-second .cards-feedback {
+  width: calc(70% / 3);
+  /* border: 2px solid black; */
+  padding: 10px 27px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  position: relative;
+}
+.video {
+  width: 80%;
+}
+.cards-feedback-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.img-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards-feedback-content p {
+  font-size: 15px;
+}
+.cards-feedback-content h5 {
+  font-size: 1rem;
+  padding: 0px 23px;
+}
+.contact-main {
+  background-color: #f02328;
+  color: #fee9ea;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-title img {
+  width: 150px;
+  vertical-align: middle;
+}
+.contact-area {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+/* .social-links a {
+  color: white;
+  border: 2px solid white;
+  padding: 20px;
+  background-color: transparent;
+  
+  border-radius: 50%;
+} */
+.social-links a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 100%;
+  margin: 0px 10px;
+  color: white;
+  border: 2px solid white;
+  font-size: 22px;
+  text-align: center;
+  line-height: 50px;
+}
+.icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.icons i {
+  font-size: 2rem;
+}
+.icons p {
+  font-size: 1rem;
+}
+.kfc-man {
+  background-image: url("./Assets/kfc-man-removebg-preview.png");
+
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 30px 30px;
+}
+.footer {
+  background-color: #1f2329;
+  background-blend-mode: darken;
+}
+.footer-main {
+  display: flex;
+  flex-direction: row;
+
+  /* padding: 30px 0px; */
+}
+
+.footer-col h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #929498;
+
+  font-weight: 500;
+}
+.footer-col ul {
+  margin-top: 25px;
+}
+.footer-col ul li,
+.footer-col ul li a {
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #383b40;
+  font-weight: 300;
+  text-decoration: none;
+  line-height: 1.9;
+}
+.footer-col {
+  width: 20%;
+}
+
+ul {
+  list-style: none;
+}
+.f-copyright p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #383b40;
+  display: inline;
+  margin-right: 33px;
+}
+.bars {
+  display: none;
+}
+@media (max-width: 991px) {
+  .main-section {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .navbar-child ul {
+    display: none;
+  }
+  .bars {
+    display: block;
+    color: #ffffff;
+  }
+  .homePage-body {
+    max-width: 100%;
+    gap: 30px;
+  }
+  .main-section img {
+    max-width: 450px;
+  }
+}
+@media (max-width: 1169px) {
+  .cards-first-child {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 948px) {
+  .cards-first-child .cards {
+    width: max-content;
+  }
+}
+@media (max-width: 897px) {
+  .cards-second-child .cards {
+    width: max-content;
+  }
+}
+@media (max-width: 797px) {
+  .cards-second-child,
+  .cards-first-child {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards-first-child .cards {
+    width: max-content;
+  }
+}
+@media (max-width: 768px) {
+  .cards-first-child {
+    display: flex;
+    flex-direction: column;
+  }
+  .comments-second {
+    flex-wrap: wrap;
+  }
+  .comments-second .cards-feedback {
+    width: calc(70% / 2);
+  }
+}
+@media (max-width: 675px) {
+  .cards-first-child .cards,
+  .cards-second-child .cards {
+    width: max-content;
+  }
+}
+@media (max-width: 499px) {
+  .cards-first-child .cards,
+  .cards-second-child .cards {
+    width: calc(100% - 104px);
+  }
+  .cards-second-child .cards-title {
+    font-size: 18px;
+  }
+  video {
+    width: 100%;
+  }
+  .comments-first,
+  .comments-second {
+    flex-direction: column;
+    align-items: center;
+  }
+  .comments-first .cards-feedback,
+  .comments-second .cards-feedback {
+    width: 70%;
+  }
+}
+@media (max-width: 1170px) {
+  .menu-items ul {
+    gap: 0px;
+  }
+}
+@media (max-width: 1010px) {
+  .menu-items ul li:first-child,
+  .menu-items ul li:last-child {
+    display: none;
+  }
+}
+@media (max-width: 1075px) {
+  .kfc-app-child {
+    padding: 10px 0px;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .voucher-btn {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .voucher-head {
+    font-size: x-large;
+    text-align: center;
+  }
+}
+@media (max-width: 1100px) {
+  .feedback-child {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 929px) {
+  .video {
+    width: 65%;
+    padding: 0px 20px;
+  }
+  .comments {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .feedback-para img {
+    width: 100%;
+  }
+}
